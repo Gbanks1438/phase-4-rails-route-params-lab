@@ -31,8 +31,12 @@ need to integrate the following scenario in your application:
 2. The application should render the values from the student record with the
    corresponding ID in the database.
 
+<<<<<<< HEAD
 You can try out your solution by running `rails s` and visiting
 `localhost:3000/students/2` in the browser.
+=======
+You can try out your solution by running `rails s` and visiting `localhost:3000/students/2` in the browser.
+>>>>>>> df5741c1c469e7983c11f09c4256f9fde59a8569
 
 There are two failing RSpec specs in this lesson; you can find them in
 `spec/requests/student_spec.rb`. Make sure they pass without breaking the other
@@ -48,7 +52,11 @@ https://www.google.com/search?q=bread
 ```
 
 That `?q=bread` portion of the URL is known as a
+<<<<<<< HEAD
 [**query string parameter**][query params]. Query string parameters are another
+=======
+[**query string parameters**][query params]. Query string parameters are another
+>>>>>>> df5741c1c469e7983c11f09c4256f9fde59a8569
 way of providing data in a request. They're structured as key-value pairs, like
 so:
 
@@ -66,10 +74,18 @@ params
 
 As a bonus deliverable:
 
+<<<<<<< HEAD
 **Un-comment out the last test in `/spec/requests/students_spec.rb` to complete the bonus.**
 
 1. Use query params in the `index` action to return a list of all students whose
    first or last name matches the query parameter.
+=======
+1. Use query params in the `index` action to customize the sorting order.
+
+You'll need to update the `spec/requests/students_spec.rb` file to run the tests
+for the bonus deliverable. Just remove the `skip: "bonus"` to run the bonus
+tests.
+>>>>>>> df5741c1c469e7983c11f09c4256f9fde59a8569
 
 ## Resources
 
